@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap, Shield, Leaf } from "lucide-react";
-import heroImage from "@/assets/solar-hero.jpg";
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -13,7 +12,7 @@ const HeroSection = () => {
   return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img src={heroImage} alt="Modern solar installation" className="w-full h-full object-cover" />
+        <img src="/lovable-uploads/eebd02db-3c4f-4998-b94a-38f8db77cc99.png" alt="Radhya Rama Energy Solar Solutions" className="w-full h-full object-cover object-center" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/20"></div>
       </div>
 
