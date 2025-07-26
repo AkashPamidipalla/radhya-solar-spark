@@ -29,12 +29,19 @@ const FloatingNavigation = () => {
       <div className="flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center">
-            <span className="text-white font-bold text-sm">R</span>
-          </div>
-          <span className="font-bold text-lg text-foreground hidden sm:block">
-            Radhya Rama Energy
-          </span>
+          <button 
+            onClick={() => scrollToSection("home")}
+            className="flex items-center space-x-2 transition-transform duration-300 hover:scale-105"
+          >
+            <img 
+              src="/lovable-uploads/8ec96560-b1d0-4527-93dc-bba15dbe23c0.png" 
+              alt="Radhya Rama Energy Logo"
+              className="h-10 w-auto transition-all duration-300 hover:drop-shadow-lg"
+            />
+            <span className="font-bold text-lg text-foreground hidden sm:block">
+              Radhya Rama Energy
+            </span>
+          </button>
         </div>
 
         {/* Desktop Menu */}
