@@ -1,8 +1,6 @@
 import { Award, Users, Wrench, Heart } from "lucide-react";
-
 const AboutSection = () => {
-  return (
-    <section className="py-20 bg-gradient-to-b from-muted/30 to-background">
+  return <section className="py-20 bg-gradient-to-b from-muted/30 to-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
@@ -58,29 +56,8 @@ const AboutSection = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-20 bg-white rounded-3xl p-8 shadow-medium">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">500+</div>
-              <div className="text-muted-foreground">Happy Customers</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">2MW+</div>
-              <div className="text-muted-foreground">Solar Installed</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">₹2Cr+</div>
-              <div className="text-muted-foreground">Customer Savings</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">25</div>
-              <div className="text-muted-foreground">Year Warranty</div>
-            </div>
-          </div>
-        </div>
+        
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
