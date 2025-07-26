@@ -26,7 +26,9 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					light: 'hsl(var(--primary-light))',
+					dark: 'hsl(var(--primary-dark))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -51,6 +53,15 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				solar: {
+					green: 'hsl(var(--solar-green))',
+					'green-light': 'hsl(var(--solar-green-light))',
+					'green-dark': 'hsl(var(--solar-green-dark))',
+					mint: 'hsl(var(--solar-mint))',
+					sage: 'hsl(var(--solar-sage))',
+					grey: 'hsl(var(--solar-grey))',
+					'dark-grey': 'hsl(var(--solar-dark-grey))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',

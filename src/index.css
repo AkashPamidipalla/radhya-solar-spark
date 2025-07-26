@@ -2,39 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Solar Energy Design System - Soft greens, whites, and light greys */
 
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 210 12% 16%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 12% 16%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 12% 16%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Solar green theme */
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 142 56% 45%;
+    --primary-dark: 142 86% 28%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 146 38% 69%;
+    --secondary-foreground: 210 12% 16%;
 
-    --muted: 210 40% 96.1%;
+    --muted: 210 40% 98%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 142 30% 85%;
+    --accent-foreground: 210 12% 16%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 142 76% 36%;
+
+    /* Custom solar theme variables */
+    --solar-green: 142 76% 36%;
+    --solar-green-light: 142 56% 45%;
+    --solar-green-dark: 142 86% 28%;
+    --solar-mint: 146 38% 69%;
+    --solar-sage: 142 30% 85%;
+    --solar-grey: 210 11% 96%;
+    --solar-dark-grey: 210 12% 16%;
+    
+    /* Gradients */
+    --gradient-solar: linear-gradient(135deg, hsl(var(--solar-green)), hsl(var(--solar-green-light)));
+    --gradient-sage: linear-gradient(180deg, hsl(var(--solar-sage)), hsl(var(--background)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--solar-green) / 0.9), hsl(var(--solar-green-dark) / 0.8));
+    
+    /* Glassmorphism */
+    --glass-bg: 0 0% 100% / 0.8;
+    --glass-border: 0 0% 100% / 0.2;
+    
+    /* Shadows */
+    --shadow-soft: 0 2px 8px hsl(var(--solar-green) / 0.1);
+    --shadow-medium: 0 4px 16px hsl(var(--solar-green) / 0.15);
+    --shadow-strong: 0 8px 32px hsl(var(--solar-green) / 0.2);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     --radius: 0.5rem;
 
@@ -101,5 +129,48 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  /* Glassmorphism Navigation */
+  .glass-nav {
+    @apply backdrop-blur-lg bg-white/80 border border-white/20 shadow-lg;
+  }
+  
+  /* Hero Button Variants */
+  .hero-btn {
+    @apply bg-gradient-to-r from-primary to-primary-light text-primary-foreground px-8 py-4 rounded-full font-semibold text-lg shadow-medium hover:shadow-strong transition-all duration-300 hover:scale-105;
+  }
+  
+  .hero-btn-outline {
+    @apply border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg backdrop-blur-sm bg-white/10 hover:bg-white hover:text-primary transition-all duration-300;
+  }
+  
+  /* Service Cards */
+  .service-card {
+    @apply bg-white p-6 rounded-2xl shadow-soft hover:shadow-medium transition-all duration-300 hover:-translate-y-1 border border-accent/20;
+  }
+  
+  /* Calculator Card */
+  .calculator-card {
+    @apply bg-white p-8 rounded-3xl shadow-strong border border-primary/10;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    @apply bg-gradient-to-br from-accent/20 to-white p-8 rounded-3xl shadow-medium;
+  }
+  
+  /* Scroll animations */
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
