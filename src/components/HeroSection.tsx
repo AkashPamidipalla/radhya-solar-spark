@@ -1,24 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap, Shield, Leaf } from "lucide-react";
 import heroImage from "@/assets/solar-hero.jpg";
-
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({
+        behavior: "smooth"
+      });
     }
   };
-
-  return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroImage} 
-          alt="Modern solar installation" 
-          className="w-full h-full object-cover"
-        />
+        <img src={heroImage} alt="Modern solar installation" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/20"></div>
       </div>
 
@@ -26,10 +21,7 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-4 pt-20">
         <div className="max-w-4xl mx-auto text-center text-white">
           {/* Badge */}
-          <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-2 mb-6">
-            <Zap className="w-4 h-4 text-yellow-400" />
-            <span className="text-sm font-medium">Clean Energy Solutions</span>
-          </div>
+          
 
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
@@ -46,20 +38,11 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button 
-              onClick={() => scrollToSection("contact")}
-              className="hero-btn group"
-            >
+            <Button onClick={() => scrollToSection("contact")} className="hero-btn group">
               Get a Free Quote
               <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
             </Button>
-            <Button 
-              onClick={() => scrollToSection("calculator")}
-              variant="outline"
-              className="hero-btn-outline"
-            >
-              Calculate Savings
-            </Button>
+            
           </div>
 
           {/* Features */}
@@ -86,8 +69,6 @@ const HeroSection = () => {
           <div className="w-1 h-3 bg-white rounded-full mt-2 animate-bounce"></div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
