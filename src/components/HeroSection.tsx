@@ -25,7 +25,7 @@ const HeroSection = () => {
             <img 
               src="/lovable-uploads/8ec96560-b1d0-4527-93dc-bba15dbe23c0.png" 
               alt="Radhya Rama Energy Solutions Logo" 
-              className="h-12 sm:h-16 md:h-20 w-auto drop-shadow-lg hover:scale-105 transition-transform duration-300"
+              className="h-16 sm:h-20 md:h-24 lg:h-28 w-auto drop-shadow-lg hover:scale-105 transition-transform duration-300"
             />
           </div>
 
