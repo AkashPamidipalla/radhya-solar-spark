@@ -23,9 +23,9 @@ const HeroSection = () => {
           {/* Logo */}
           <div className="flex justify-center mb-8">
             <img 
-              src="/lovable-uploads/67e5d0e2-994e-4898-a53d-fa139fc97bad.png" 
-              alt="Radhya Rama Energy Solutions Complete Logo" 
-              className="h-16 sm:h-20 md:h-24 w-auto drop-shadow-lg hover:scale-105 transition-transform duration-300"
+              src="/lovable-uploads/8ec96560-b1d0-4527-93dc-bba15dbe23c0.png" 
+              alt="Radhya Rama Energy Solutions Logo" 
+              className="h-12 sm:h-16 md:h-20 w-auto drop-shadow-lg hover:scale-105 transition-transform duration-300"
             />
           </div>
 
