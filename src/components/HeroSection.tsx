@@ -20,8 +20,14 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 pt-20">
         <div className="max-w-4xl mx-auto text-center text-white">
-          {/* Badge */}
-          
+          {/* Logo */}
+          <div className="flex justify-center mb-8">
+            <img 
+              src="/lovable-uploads/8ec96560-b1d0-4527-93dc-bba15dbe23c0.png" 
+              alt="Radhya Rama Energy Solutions Logo" 
+              className="h-12 sm:h-16 md:h-20 w-auto drop-shadow-lg hover:scale-105 transition-transform duration-300"
+            />
+          </div>
 
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
