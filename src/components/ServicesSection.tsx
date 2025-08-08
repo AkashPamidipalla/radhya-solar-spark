@@ -15,12 +15,6 @@ const ServicesSection = () => {
       features: ["Industrial Scale", "Cost Reduction", "Tax Benefits", "ROI Analysis"]
     },
     {
-      icon: Lightbulb,
-      title: "Solar Street Lighting",
-      description: "Autonomous solar-powered street lighting solutions for roads, parks, and public spaces.",
-      features: ["Auto On/Off", "Weather Resistant", "Long Battery Life", "Smart Controls"]
-    },
-    {
       icon: Wrench,
       title: "Maintenance & Support",
       description: "Comprehensive maintenance services to ensure optimal performance and longevity of your solar systems.",
