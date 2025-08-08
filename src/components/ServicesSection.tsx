@@ -15,12 +15,6 @@ const ServicesSection = () => {
       features: ["Industrial Scale", "Cost Reduction", "Tax Benefits", "ROI Analysis"]
     },
     {
-      icon: Droplets,
-      title: "Solar Water Heaters",
-      description: "Energy-efficient solar water heating systems for residential and commercial applications.",
-      features: ["Energy Efficient", "Cost Effective", "Eco Friendly", "Low Maintenance"]
-    },
-    {
       icon: Lightbulb,
       title: "Solar Street Lighting",
       description: "Autonomous solar-powered street lighting solutions for roads, parks, and public spaces.",
