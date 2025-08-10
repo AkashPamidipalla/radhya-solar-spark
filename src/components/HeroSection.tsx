@@ -22,7 +22,7 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto text-center text-white">
           {/* Logo */}
           <div className="flex justify-center mb-8">
-            <img src="/lovable-uploads/20e1a766-295a-45ae-ba50-55edc7533695.png" alt="Radhya Rama Energy Solutions Logo" className="h-10 w-auto drop-shadow-lg hover:scale-105 transition-transform duration-300" />
+            <img src="/lovable-uploads/20e1a766-295a-45ae-ba50-55edc7533695.png" alt="Radhya Rama Energy Solutions Logo" className="h-32 sm:h-40 md:h-52 lg:h-64 xl:h-72 w-auto drop-shadow-lg hover:scale-105 transition-transform duration-300" />
           </div>
 
           {/* Main Heading */}
